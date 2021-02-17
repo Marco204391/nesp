@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- my hello page -->
+<html lang="it">
+
+<head>
+    <meta name="author" content="Marco Lecci">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>CV Marco Lecci</title>
+    <link rel="stylesheet" href="AW.css">
+    <script type="text/javascript" src="logic.js" defer></script>
+</head>
+<body>
+
+<div class="page_content">
+    <h2>CV Marco Lecci</h2>
+    <p class = "descrizione">
+        Curriculum Vitae Marco Lecci
+    </p>
+    <img height="25%" width="25%" id="figure" src="Foto.jpg"/>
+    <h4>Genaralità :</h4>
+    <ol><p>Nato a Gagliano del capo(LE) il 03/05/1994</p></ol>
+    <h4>Nazionalità :</h4>
+    <ol><p>Italiana</p></ol>
+<hr>
+<h2>
+    <p class = "descrizione">
+    Istruzione
+    </p>
+    <h4>Maturità : </h4>
+    <p>Liceo scientifico</p>
+    <h4>Laurea :</h4>
+    <p>Ing. Gestionale presso Politecnico di Torino</p>
+</h2>
+<hr>
+    <table class="info">
+        <tr>
+            <td colspan="5"><strong>Esperienze professionali :</strong></td>
+        </tr>
+        <tr>
+            <th>Tirocinante Project Manager presso Almaviva S.p. A. - Torino - ITALIA</th>
+        </tr>
+    </table>
+<hr>
+    <table class="info">
+        <tr>
+            <td colspan="5"><strong>Conoscenze Informatiche :</strong></td>
+        </tr>
+        <tr>
+            <th>Java : Ottima</th>
+        </tr>
+        <tr>
+            <th>Mysql: Buona</th>
+        </tr>
+        <tr>
+            <th>Html: Buona</th>
+        </tr>
+    </table>
+<hr>
+    <form action="..." method="get">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="Name" name="senderName">
+        <label for="name">Surname:</label>
+        <input type="text" id="Surname" name="senderSurname">
+        <label for="name">e-mail:</label>
+        <input id="mail" type="email" name="tbm_email" value="" autocomplete="email"
+               placeholder="Scrivi la tua email..." data-validation="email" required="required"></div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="message"></textarea> </div>
+    <div>
+        <button type="submit">Contact Me</button> </div>
+    </form>
+<hr>
+    <form action="..." method="post">
+    <p class = "descrizione">
+        Proposta di lavoro
+    </p>
+    <label for="name">Nome:</label>
+    <input type="text" name="user" value="" autocomplete="name" placeholder="Scrivi il tuo nome..."
+           data-validation="email" required="required"maxlength="30">
+    <label for="name">Pwd:</label>
+    <input type="password" name="pwd" maxlength="30" required placeholder="Scrivi la tua password...">
+    <input type="hidden" name="invisible" value="notShowed">
+    <label for="name">Data inizio:</label>
+    <input type="date" name="milestone">
+    <label for="name">Data fine:</label>
+    <input type="date" name="milestone">
+    <div>
+        <label for="name">Linguaggio progetto proposto:</label>
+        <input type="radio" id="favJ" name="favv" value="Java">
+        <label for="favJ">Java</label>
+        <input type="radio" id="favPy" name="favv" value="Python">
+        <label for="favPy">Python</label>
+        <input type="radio" id="favCpp" name="favv" value="Cpp">
+        <label for="favCpp">C++</label>
+    </div>
+    <div>
+        <label for="name">Seleziona città :</label>
+        <label for="name">Citta :</label>
+        <input type="radio" id="favMi" name="fav" value="Milano">
+        <label for="favMi">Milano</label>
+        <input type="radio" id="favTo" name="fav" value="Torino">
+        <label for="favTo">Torino</label>
+        <input type="radio" id="favLe" name="fav" value="Lecce">
+        <label for="favLe">Lecce</label>
+    </div>
+    <div>
+        <label for="name">Seleziona sistema operativo:</label>
+        <div>
+            <select name="os" single>
+                <option value="none" selected>-</option>
+                <option value="linux">Linux</option>
+                <option value="windows">Windows</option>
+                <option value="macOs">MacOS</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <label for="name">Range Ral [20000-30000]:</label>
+        <input type="range" list="tickmarks" >
+        <datalist id="tickmarks">
+            <option value="20000" label="20000€"></option>
+            <option value="21000"></option>
+            <option value="22000"></option>
+            <option value="23000"></option>
+            <option value="24000"></option>
+            <option value="25000" label="25000€"></option>
+            <option value="26000"></option>
+            <option value="27000"></option>
+            <option value="28000"></option>
+            <option value="29000"></option>
+            <option value="30000" label="30000€"></option>
+        </datalist></div>
+    <div>
+    <button type="submit">PROPONI!</button><button type="reset">Reset</button></div>
+    </form>
+</div>
+<div id = "footer">
+    Copyright © 2021 | Designed by Marco Lecci
+</div> <!-- end of footer -->
+</body>
+</html>
